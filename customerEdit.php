@@ -4,7 +4,7 @@ session_start();
 if (!isset($_SESSION["SESSION_EMAIL"])) {
     header("Location: customerLogin.php");
 }
-include_once 'conn.php';
+include 'conn.php';
 
 ?>
 
@@ -92,13 +92,13 @@ include_once 'conn.php';
             <div class="col-lg-6 m-auto">
                 <div class="card bg-dark mt-5">
                     <div class="card-title bg-primary text-white mt-5">
-                        <h3 class="text-center py-3">View Account Details</h3>
+                        <h3 class="text-center py-3">Update Account Details</h3>
 
                     </div>
 
                     <div class="card-body">
 
-                        <form action="customerEdit.php" method="post">
+                        <form action="customerUpdate.php" method="post">
 
                             <?php
                             $sql = "SELECT * FROM users WHERE email='{$_SESSION["SESSION_EMAIL"]}'";
@@ -112,15 +112,15 @@ include_once 'conn.php';
                                 <input type="text" name="userID" class="form-control mb-3" value="<?php echo $row["userID"]; ?>" readonly>
 
                                 <label class="text-white">Firstname:</label>
-                                <input type="text" name="firstname" class="form-control mb-3" value="<?php echo $row["firstname"]; ?>" readonly>
+                                <input type="text" name="firstname" class="form-control mb-3" value="<?php echo $row["firstname"]; ?>">
 
                                 <label class="text-white">Lastname:</label>
-                                <input type="text" name="lastname" class="form-control mb-3" value="<?php echo $row["lastname"]; ?>" readonly>
+                                <input type="text" name="lastname" class="form-control mb-3" value="<?php echo $row["lastname"]; ?>">
 
                                 <label class="text-white">Email:</label>
                                 <input type="email" name="email" class="form-control mb-3" value="<?php echo $row["email"]; ?>" readonly>
 
-                                <button type="submit" class="btn btn-primary mb-3 editbtn">EDIT INFO</button>
+                                <input type="submit" name="updateInfo" class="btn btn-primary mb-3 editbtn" value="Update" />
 
 
                             <?php } ?>
