@@ -118,7 +118,60 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
     
   </table>
 </div>
-        </div>
+
+
+
+
+
+<div class="bs-example container mt-5" data-example-id="striped-table">
+  <table class="table table-striped table-bordered table-hover">
+   
+    <thead>
+      <tr>
+        <th>Appointment ID</th>
+        <th>User ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>APPOINTMENT</th>
+      </tr>
+    </thead>
+    <tbody>
+    <?php
+          $sqlA3 = "SELECT * FROM appointment WHERE status='Approved' OR status='Cancelled' GROUP BY userID ORDER BY apptID";
+          $resultA3 = mysqli_query($con, $sqlA3);
+
+          while($rows = mysqli_fetch_assoc($resultA3))
+          {
+              $uid = $rows['userID'];
+   ?>
+      <tr>
+        <th scope="row"><?php echo $rows['apptID']; ?></th>
+        <td><?php echo $rows['userID']; ?> </td>
+        <td><?php echo $rows['patientFirstname']; ?></td>
+        <td><?php echo $rows['patientLastname']; ?></td>
+        
+        <td><button class="btn btn-info btn-lg"><a style="text-decoration:none;" href="viewReqAppt.php?reqID=<?php echo $rows['userID']; ?>">VIEW APPOINTMENT</a></button></td>
+      </tr>
+
+
+
+
+      
+      <?php } ?>
+       
+    </tbody>
+    
+  </table>
+</div>
+
+
+
+
+
+
+
+
+</div>
         <!-- /#page-content-wrapper -->
 
     </div>

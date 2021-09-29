@@ -129,7 +129,7 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
     <tbody>
     <?php
          
-             $sqlA6= "SELECT * FROM appointment WHERE userID= '{$reqID}' AND status='Pending' ";
+             $sqlA6= "SELECT * FROM appointment WHERE userID= '{$reqID}' ";
              $resultA6= mysqli_query($con, $sqlA6);
          
           while($rows = mysqli_fetch_assoc($resultA6))
