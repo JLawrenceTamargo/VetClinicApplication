@@ -13,12 +13,12 @@ if (isset($_POST["updateInfo"])) {
     $pEmail = $_POST['email'];
 
 
-    $query5 = "UPDATE users SET (firstname = '{$pFname}', lastname = '{$pLname}', email = '{$pEmail}')";
+    $query5 = "UPDATE users SET firstname = '{$pFname}', lastname = '{$pLname}', email = '{$pEmail}' WHERE userID = '{$pUid}'";
     $result3 = mysqli_query($con, $query5);
 
     if ($result3) {
 
-        echo "<script> alert('Updated Info Successfully'); </script>";
+        echo "<script> alert('Updated Successfully'); window.location='customerView.php?userID=$pUid' </script>";
     } else {
         echo "<script>alert('Error'); window.location='customerView.php?userID=$pUid';</script>";
     }
