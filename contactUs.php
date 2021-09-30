@@ -81,7 +81,7 @@
 
     <div class="wrap-header">
         <h1 style="color: #5c3d2e; font-family: 'Lato', sans-serif; "><b>CONTACT</b> US</h1>
-          <div class="hero-text"><i>Got any Questions? Feel free to ask or visit our FAQ page</i></div>  
+          <div class="hero-text"><i>Got any Questions? Feel free to ask or visit <br> our FAQ page</i></div>  
     </div>
   
     <div class="wrap-contact">
@@ -97,7 +97,7 @@
         </div>
 
         <div class="wrap-input validate-input" data-validate = "Please enter your message">
-          <textarea class="input" type="text" name="message" placeholder="Your Message"></textarea>
+          <textarea class="input" type="text" name="message" placeholder="Your Message.."></textarea>
         </div>
 
         <div class="container-contact-form-btn">
@@ -107,9 +107,7 @@
         </div>
 
         <div class="grid-container">
-          <div class="item1 left-align"><i class="fa fa-lg fa-map-marker-alt"></i> 4517 Salcedo Street, Makati, Metro Manila</div>  
-          <div class="item4 right-align"><i class="fa fa-lg fa-phone"></i> (091) 556-7890<br>(099) 456-7890</div>
-
+          <div class="item1" style="font-size: 13px; text-align: center; width:100%"><i class='bx bx-location-plus'></i> 4517 Salcedo Street, Makati, Metro Manila <br> <i class='bx bx-envelope'></i> paws&tails@gmail.com <br> <i class='bx bx-phone' ></i> (098) 556-7890 </div>
       </div>
 
       </form>

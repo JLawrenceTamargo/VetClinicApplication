@@ -192,7 +192,7 @@ input:focus {
 }
 
 input::-webkit-input-placeholder {
-  color: #bdbdd3;
+  color: #5c3d2e;
 }
 input:-moz-placeholder {
   color: #bdbdd3;
@@ -205,7 +205,7 @@ input:-ms-input-placeholder {
 }
 
 textarea::-webkit-input-placeholder {
-  color: #bdbdd3;
+  color: #5c3d2e;
 }
 textarea:-moz-placeholder {
   color: #bdbdd3;
@@ -432,8 +432,6 @@ textarea.input {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 100px;
   grid-gap: 100px;
   padding: 10px 30px 0px 30px;
 }

@@ -120,7 +120,7 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title" style="font-family: 'Prata', sans-serif; color: #5c3d2e; font-size:32px;">Fur and Tails Veterinary Clinic</h2>
+                            <h2 class="card-title" style="font-family: 'Prata', sans-serif; color: #5c3d2e; font-size:32px;">Paws and Tails Veterinary Clinic</h2>
                             <p class="card-text" style="font-family: 'Lato', serif; font-size:19px; padding-top: 10px">Our veterinary team cares about what they do and is always ready to help. We are a full service clinic that provides care to your fur babies. We love the animals we serve and we provide quality services like what champions do.</p>
                         </div>
                         <div class="card-footer"><a class="btn btn-outline-dark btn-sm" href="#!">Read More</a></div>
