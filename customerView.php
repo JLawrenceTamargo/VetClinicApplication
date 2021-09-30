@@ -43,16 +43,16 @@ if(isset($_POST["updateInfo"])){
     <link rel="stylesheet" href="assets/style.css" />
   
     <!--FONTS
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Prata', sans-serif;
+    font-family: 'Lato', sans-serif;
     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
 
 
-    <title>Fur and Tails</title>
+    <title>Paws and Tails</title>
 
     <script>
        
@@ -114,8 +114,8 @@ if(isset($_POST["updateInfo"])){
     <div class="container mt-5" style="padding-top:60px;">
         <div class="row">
             <div class="col-lg-6 m-auto">
-                <div class="card bg-dark mt-5">
-                    <div class="card-title bg-primary text-white mt-5">
+                <div class="card mt-5">
+                    <div class="card-title text-white mt-5">
                         <h3 class="text-center py-3">View Account Details</h3>
                       
                     </div>
@@ -206,9 +206,9 @@ if(isset($_POST["updateInfo"])){
 <!--EOF MODAL-->
 
      <!-- Footer-->
-     <footer class="footer py-3 bg-dark">
-            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
-        </footer>
+    <footer class="footer py-3">
+        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Paws and Tails Animal Clinic</p></div>
+    </footer>
 
          <!--BOOTSRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

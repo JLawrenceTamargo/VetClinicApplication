@@ -28,7 +28,7 @@
   <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
     <ul class="nav flex-column text-white w-100">
       <a href="#" class="nav-link h3 text-white my-2">
-      <img src="assets/pawLogo-min.png" width="200" height="200"/> </br><p class="text-center mt-3">Fur and Tails Animal Clinic</p>
+      <img src="assets/pawLogo-min.png" width="200" height="200"/> </br><p class="text-center mt-3">Paws and Tails Animal Clinic</p>
       </a>
       <li>
         <a href="index.php" class="nav-link text-white"><i class="bx bxs-dashboard"></i>
@@ -53,7 +53,7 @@
     </ul>
 
     <span href="#" class="nav-link h4 w-100 mb-5 text-center">
-        <p>Follow us:</p>
+        <h5>Follow Us:</h5>
       <a href=""><i class="bx bxl-instagram-alt text-white"></i></a>
       <a href=""><i class="bx bxl-twitter px-2 text-white"></i></a>
       <a href=""><i class="bx bxl-facebook text-white"></i></a>
@@ -65,7 +65,7 @@
     <!-- Top Nav -->
     <nav class="navbar top-navbar navbar-light bg-light px-5">
       <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
-      <p style="font-family: 'Prata', sans-serif; font-size:35px; color: #5c3d2e;">Fur and Tails Animal Care Clinic</p>
+      <p style="font-family: 'Prata', sans-serif; font-size:35px; color: #5c3d2e;">Paws and Tails Animal Care Clinic</p>
     
     </nav>
     <!--End Top Nav -->
@@ -108,7 +108,7 @@
 
         <div class="grid-container">
           <div class="item1 left-align"><i class="fa fa-lg fa-map-marker-alt"></i> 4517 Salcedo Street, Makati, Metro Manila</div>  
-          <div class="item4 right-align"><i class="fa fa-lg fa-phone"></i> (123) 456-7890<br>(123) 456-7890</div>
+          <div class="item4 right-align"><i class="fa fa-lg fa-phone"></i> (091) 556-7890<br>(099) 456-7890</div>
 
       </div>
 
@@ -117,16 +117,14 @@
     </div>
   </div>
 </div>
-
 </div>
-
 </section>
 
     <!--EOF CONTACT US -->
 
     <!-- Footer-->
     <footer class="footer py-3">
-            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Paws and Tails Animal Clinic</p></div>
         </footer>
 </div><!--EOF MAIN CONTAINER-->
 
