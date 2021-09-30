@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if (!isset($_SESSION["SESSION_EMAIL"])) {
+if (!isset($_SESSION["SESSION_EMAIL_ADMIN"])) {
     header("Location: viewReqPending.php");
 }
 
