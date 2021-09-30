@@ -5,6 +5,7 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
     header("Location: customerLogin.php");
 }
 
+include 'conn.php';
 ?>
 
 <!DOCTYPE html>

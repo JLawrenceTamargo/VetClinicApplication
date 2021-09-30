@@ -22,6 +22,8 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
         $sqlStat= "UPDATE appointment SET status ='$statusSet', remarks='$rem' WHERE apptID = '$aID'";
         $resultStat= mysqli_query($con, $sqlStat);
 
+
+        
         if($resultStat)
         {
             echo "<script> alert('Updated Successfully'); window.location='viewReqAppt.php?reqID=$uID'; </script>";
