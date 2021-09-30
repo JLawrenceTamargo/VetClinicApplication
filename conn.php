@@ -1,5 +1,5 @@
 <?php
-    $con = mysqli_connect('localhost', 'root', '', 'db_vetmed-login');
+    $con = mysqli_connect('localhost', 'root', 'crypto.lawrence18', 'db_vetmed-login');
 
     if(!$con)
     { 
@@ -11,5 +11,3 @@
 
         die('Please check your connection!'.mysqli_error());
     }
-
-?>

@@ -4,8 +4,25 @@ session_start();
 if (!isset($_SESSION["SESSION_EMAIL"])) {
     header("Location: customerLogin.php");
 }
-include_once 'conn.php';
+include 'conn.php';
 
+if (isset($_POST["updateInfo"])) {
+    $pUid = $_POST['userID'];
+    $pFname = $_POST['firstname'];
+    $pLname = $_POST['lastname'];
+    $pEmail = $_POST['email'];
+
+
+    $query5 = "UPDATE users SET firstname = '{$pFname}', lastname = '{$pLname}', email = '{$pEmail}' WHERE userID = '{$pUid}'";
+    $result3 = mysqli_query($con, $query5);
+
+    if ($result3) {
+
+        echo "<script> alert('Updated Successfully'); window.location='customerView.php?userID=$pUid' </script>";
+    } else {
+        echo "<script>alert('Error'); window.location='customerView.php?userID=$pUid';</script>";
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -23,16 +40,16 @@ include_once 'conn.php';
     <link rel="stylesheet" href="assets/style.css" />
 
     <!--FONTS
-    font-family: 'Prata', sans-serif;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap" rel="stylesheet">
 
 
 
-    <title>Paws and Tails</title>
+    <title>Fur and Tails</title>
 
     <script>
         function SelectedTextValue2(ele) {
@@ -87,52 +104,7 @@ include_once 'conn.php';
 
 
 
-    <div class="container mt-5" style="padding-top:60px;">
-        <div class="row">
-            <div class="col-lg-6 m-auto">
-                <div class="card mt-5">
-                    <div class="card-title text-white mt-5">
-                        <h3 class="text-center py-3">View Account Details</h3>
 
-                    </div>
-
-                    <div class="card-body">
-
-                        <form action="customerEdit.php" method="post">
-
-                            <?php
-                            $sql = "SELECT * FROM users WHERE email='{$_SESSION["SESSION_EMAIL"]}'";
-                            $result = mysqli_query($con, $sql);
-
-                            if (mysqli_num_rows($result) > 0) {
-                                $row = mysqli_fetch_assoc($result);
-                            ?>
-
-                                <label class="text-white">User ID:</label>
-                                <input type="text" name="userID" class="form-control mb-3" value="<?php echo $row["userID"]; ?>" readonly>
-
-                                <label class="text-white">Firstname:</label>
-                                <input type="text" name="firstname" class="form-control mb-3" value="<?php echo $row["firstname"]; ?>" readonly>
-
-                                <label class="text-white">Lastname:</label>
-                                <input type="text" name="lastname" class="form-control mb-3" value="<?php echo $row["lastname"]; ?>" readonly>
-
-                                <label class="text-white">Email:</label>
-                                <input type="email" name="email" class="form-control mb-3" value="<?php echo $row["email"]; ?>" readonly>
-
-                                <button type="submit" class="btn btn-primary mb-3 editbtn">EDIT INFO</button>
-
-
-                            <?php } ?>
-                            <!--EOF Fetching data-->
-
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <!-- Footer-->
@@ -145,10 +117,6 @@ include_once 'conn.php';
     <!--BOOTSRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-     <!-- Footer-->
-    <footer class="footer py-3">
-        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Paws and Tails Animal Clinic</p></div>
-    </footer>
 
 
 
