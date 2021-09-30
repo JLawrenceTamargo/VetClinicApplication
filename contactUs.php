@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="assets/style.css" />
   
     <!--FONTS
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Prata', sans-serif;
+    font-family: 'Lato', sans-serif;
     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
 
 
@@ -65,7 +65,7 @@
     <!-- Top Nav -->
     <nav class="navbar top-navbar navbar-light bg-light px-5">
       <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
-      <p style="font-family: 'Overpass', sans-serif; font-size:35px;">Fur and Tails Animal Care Clinic</p>
+      <p style="font-family: 'Prata', sans-serif; font-size:35px; color: #5c3d2e;">Fur and Tails Animal Care Clinic</p>
     
     </nav>
     <!--End Top Nav -->
@@ -73,15 +73,17 @@
 
     <!--CONTACT US CONTENTS-->
     <section class="mb-5 py-3">
-
-  <div class="listing-hero">
-    <div class="hero-heading">
-        <div class="hero-large">Contact Us.</div>
-        <div class="hero-text"> <i>Got any Questions? Feel free to ask or visit our FAQ page </i> </div>       
-      </div>
-  </div>
+        
+            
+      
 
 <div class="container-contact">
+
+    <div class="wrap-header">
+        <h1 style="color: #5c3d2e; font-family: 'Lato', sans-serif; "><b>CONTACT</b> US</h1>
+          <div class="hero-text"><i>Got any Questions? Feel free to ask or visit our FAQ page</i></div>  
+    </div>
+  
     <div class="wrap-contact">
 
       <form name="contact" class="contact-form validate-form" method="post" action= "contact-form-handler.php">
@@ -105,7 +107,7 @@
         </div>
 
         <div class="grid-container">
-          <div class="item1 left-align"><i class="fa fa-lg fa-map-marker-alt"></i> 4517 Washington Ave, Manchester, Kentucky 39495</div>  
+          <div class="item1 left-align"><i class="fa fa-lg fa-map-marker-alt"></i> 4517 Salcedo Street, Makati, Metro Manila</div>  
           <div class="item4 right-align"><i class="fa fa-lg fa-phone"></i> (123) 456-7890<br>(123) 456-7890</div>
 
       </div>
@@ -123,7 +125,7 @@
     <!--EOF CONTACT US -->
 
     <!-- Footer-->
-    <footer class="footer py-3 bg-dark">
+    <footer class="footer py-3">
             <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
         </footer>
 </div><!--EOF MAIN CONTAINER-->
