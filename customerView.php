@@ -78,7 +78,7 @@ include 'conn.php';
         <div class="row">
             <div class="col-lg-6 m-auto">
                 <div class="card mt-5">
-                    <div class="card-title text-white mt-5">
+                    <div class="card-title  mt-5">
                         <h3 class="text-center py-3">View Account Details</h3>
 
                     </div>

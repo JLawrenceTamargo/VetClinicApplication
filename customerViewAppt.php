@@ -129,9 +129,9 @@ include_once 'conn.php';
 
 
     <!-- Footer-->
-    <footer class="footer py-3" style="background-color:#fcdec0;">
+    <footer class="footer py-3">
         <div class="container px-4 px-lg-5">
-            <p class="m-0 text-center text-dark">Copyright &copy; 2021 - Paws and Tails Animal Clinic</p>
+            <p class="m-0 text-center text-white">Copyright &copy; 2021 - Paws and Tails Animal Clinic</p>
         </div>
     </footer>
     </div>
