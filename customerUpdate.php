@@ -4,7 +4,25 @@ session_start();
 if (!isset($_SESSION["SESSION_EMAIL"])) {
     header("Location: customerLogin.php");
 }
+include 'conn.php';
 
+if (isset($_POST["updateInfo"])) {
+    $pUid = $_POST['userID'];
+    $pFname = $_POST['firstname'];
+    $pLname = $_POST['lastname'];
+    $pEmail = $_POST['email'];
+
+
+    $query5 = "UPDATE users SET firstname = '{$pFname}', lastname = '{$pLname}', email = '{$pEmail}' WHERE userID = '{$pUid}'";
+    $result3 = mysqli_query($con, $query5);
+
+    if ($result3) {
+
+        echo "<script> alert('Updated Successfully'); window.location='customerView.php?userID=$pUid' </script>";
+    } else {
+        echo "<script>alert('Error'); window.location='customerView.php?userID=$pUid';</script>";
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +51,20 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
 
     <title>Fur and Tails</title>
 
- 
+    <script>
+        function SelectedTextValue2(ele) {
+            if (ele.selectedIndex > 0) {
+                var selectedText = ele.options[ele.selectedIndex].innerHTML;
+                var selectedValue = ele.value;
+                document.getElementById("txtContent2").value = selectedText;
+            } else {
+                document.getElementById("txtContent2").value = "";
+            }
+        }
+    </script>
+
+
+
 </head>
 
 <body>
@@ -73,52 +104,7 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
 
 
 
-    <div class="container mt-5" style="padding-top:60px;">
-        <div class="row">
-            <div class="col-lg-6 m-auto">
-                <div class="card bg-dark mt-5">
-                    <div class="card-title bg-primary text-white mt-5">
-                        <h3 class="text-center py-3">View Account Details</h3>
 
-                    </div>
-
-                    <div class="card-body">
-
-                        <form action="customerEdit.php" method="post">
-
-                            <?php
-                            $sql = "SELECT * FROM users WHERE email='{$_SESSION["SESSION_EMAIL"]}'";
-                            $result = mysqli_query($con, $sql);
-
-                            if (mysqli_num_rows($result) > 0) {
-                                $row = mysqli_fetch_assoc($result);
-                            ?>
-
-                                <label class="text-white">User ID:</label>
-                                <input type="text" name="userID" class="form-control mb-3" value="<?php echo $row["userID"]; ?>" readonly>
-
-                                <label class="text-white">Firstname:</label>
-                                <input type="text" name="firstname" class="form-control mb-3" value="<?php echo $row["firstname"]; ?>" readonly>
-
-                                <label class="text-white">Lastname:</label>
-                                <input type="text" name="lastname" class="form-control mb-3" value="<?php echo $row["lastname"]; ?>" readonly>
-
-                                <label class="text-white">Email:</label>
-                                <input type="email" name="email" class="form-control mb-3" value="<?php echo $row["email"]; ?>" readonly>
-
-                                <button type="submit" class="btn btn-primary mb-3 editbtn">EDIT INFO</button>
-
-
-                            <?php } ?>
-                            <!--EOF Fetching data-->
-
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <!-- Footer-->
