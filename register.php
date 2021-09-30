@@ -118,8 +118,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 m-auto">
-                <div class="card bg-dark mt-5">
-                    <div class="card-titl bg-primary text-white mt-5">
+                <div class="card mt-5"  style="background-color: #fcdec0; color: #5c3d2e !important;">
+                    <div class="card-title mt-5">
                         <h3 class="text-center py-3">Customer Registration Form</h3>
                     </div>
 
@@ -135,9 +135,11 @@
                             <input type="password" name="password" placeholder="Enter Password here" class="form-control mt-3">
                             <input type="password" name="confirmPassword" placeholder="Confirm Password here" class="form-control mt-3">
                            
-                            <button class="btn btn-success mt-3" name="Register">REGISTER</button>
-                            <p class="text-white mt-3">Already have an existing account? <a href="customerLogin.php">SIGN-IN</a></p>
-                        </form>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <p class="mt-3" style="color: #5c3d2e">Already have an existing account? <a href="customerLogin.php" style="color: #5c3d2e;"><u>SIGN-IN</u></a></p>
+                            <button class="btn mt-3" style="background: #5c3d2e; color: white;  " name="Register">REGISTER</button>
+                            </div>
+                            </form>
                     </div>
                 </div>
             </div>

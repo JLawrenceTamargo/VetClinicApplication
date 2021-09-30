@@ -106,10 +106,10 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
 
     <div class="container">
         <div class="row">
-                <div class="card mt-5">
-            <div class="col-lg-6 m-auto"  style="background-color: #fcdec0;">
+                <div class="card mt-5" style="border: none !important;">
+            <div class="col-lg-6 m-auto"  style="background-color: #fcdec0; padding: 0px 25px 20px 25px;">
                     <div class="card-title text-white mt-5">
-                      <h2 class="text-center py-3" style="font-family: 'Lato', serif; font-size:35px; color: #5c3d2e;">Customer Login Form</h2>
+                      <h2 class="text-center py-3" style="font-size:35px; color: #5c3d2e;">Customer Login Form</h2>
                     </div>
 
                    
@@ -118,8 +118,12 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
                         <form action="" method="post">
                             <input type="email" name="email" placeholder="Enter Email here" class="form-control mt-3">
                             <input type="password" name="password" placeholder="Enter Password here" class="form-control mt-3">
-                            <button class="btn btn-outline-dark mt-3" name="Login">LOG-IN</button>
-                            <p class="mt-3">Create Account!  <a href="register.php">REGISTER</a></p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                            <p class="mt-3" style="color: #5c3d2e">Create Account!  <a href="register.php" style="color: #5c3d2e"><u>REGISTER</u></a></p>
+                            <button class="btn mt-3" style="background: #5c3d2e; color: white;  "  name="Login">LOG-IN</button>
+
+                            </div>
                         </form>
                     </div>
                 </div>
