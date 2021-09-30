@@ -28,7 +28,7 @@
   <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
     <ul class="nav flex-column text-white w-100">
       <a href="#" class="nav-link h3 text-white my-2">
-      <img src="assets/pawLogo-min.png" width="200" height="200"/> </br><p class="text-center mt-3">Fur and Tails Animal Clinic</p>
+      <img src="assets/pawLogo-min.png" width="200" height="200"/> </br><p class="text-center mt-3">Paws and Tails Animal Clinic</p>
       </a>
       <li>
         <a href="#" class="nav-link text-white"><i class="bx bxs-dashboard"></i>
@@ -52,6 +52,12 @@
       </li>
     </ul>
 
+    <span href="#" class="nav-link h4 w-100 mb-5 text-center">
+        <h5>Follow Us:</h5>
+      <a href=""><i class="bx bxl-instagram-alt text-white"></i></a>
+      <a href=""><i class="bx bxl-twitter px-2 text-white"></i></a>
+      <a href=""><i class="bx bxl-facebook text-white"></i></a>
+    </span>
     
   </div>
 
@@ -60,7 +66,7 @@
     <!-- Top Nav -->
     <nav class="navbar top-navbar navbar-light bg-light px-5">
       <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
-      <p style="font-family: 'Prata', serif; font-size:35px; color: #5c3d2e;">Fur and Tails Animal Care Clinic</p>
+      <p style="font-family: 'Prata', serif; font-size:35px; color: #5c3d2e;">Paws and Tails Animal Care Clinic</p>
     
     </nav>
     <!--End Top Nav -->
@@ -73,9 +79,9 @@
                 <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://tvmdl.tamu.edu/wp-content/uploads/2015/03/LineofDogs.jpg" alt="..." /></div>
                 <div class="col-lg-5">
                     <h1 class="font-weight-light" style="font-family: 'Prata', sans-serif; color: #5c3d2e; font-size:45px;">Care For Our Four Legged Friends</h1>
-                    <p style="font-family: 'Lato', serif; font-size:22px">At Fur and Tails, your pet's health is our top priority and we provide an excellent service just to save your pets. 
-                        We strive to provide the very best in medical care, and provide a quality grooming service. 
-                        And we offer nothing less than that to you.</p>
+                    <p style="font-family: 'Lato', serif; font-size:22px">Paws and Tails, your pet's health is our top priority and we provide an excellent service just to save your pets. 
+                        We strive to provide the very best in medical care, and provide a quality grooming services.<br>
+                        We offer nothing less than that to you.</p>
                 </div>
             </div>
             <!-- Call to Action-->
@@ -114,7 +120,7 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title" style="font-family: 'Prata', sans-serif; color: #5c3d2e; font-size:32px;">Fur and Tails Veterinary Clinic</h2>
+                            <h2 class="card-title" style="font-family: 'Prata', sans-serif; color: #5c3d2e; font-size:32px;">Paws and Tails Veterinary Clinic</h2>
                             <p class="card-text" style="font-family: 'Lato', serif; font-size:19px; padding-top: 10px">Our veterinary team cares about what they do and is always ready to help. We are a full service clinic that provides care to your fur babies. We love the animals we serve and we provide quality services like what champions do.</p>
                         </div>
                         <div class="card-footer"><a class="btn btn-outline-dark btn-sm" href="#!">Read More</a></div>
@@ -124,14 +130,8 @@
         </div>
         <!-- Footer-->
         <footer class="footer py-3">
-            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
-              <span>
-          <p>Follow us:</p>
-        <a href=""><i class="bx bxl-instagram-alt text-white"></i></a>
-        <a href=""><i class="bx bxl-twitter px-2 text-white"></i></a>
-        <a href=""><i class="bx bxl-facebook text-white"></i></a>
-      </span>
-          </footer>
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Paws and Tails Animal Clinic</p></div>
+        </footer>
 
     
 </div>

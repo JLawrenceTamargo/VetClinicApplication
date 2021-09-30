@@ -60,7 +60,7 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
   <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
     <ul class="nav flex-column text-white w-100">
       <a href="#" class="nav-link h3 text-white my-2">
-      <img src="assets/pawLogo-min.png" width="200" height="200"/> </br><p class="text-center mt-3">Fur and Tails Animal Clinic</p>
+      <img src="assets/pawLogo-min.png" width="200" height="200"/> </br><p class="text-center mt-3">Paws and Tails Animal Clinic</p>
       </a>
       <li>
         <a href="index.php" class="nav-link text-white"><i class="bx bxs-dashboard"></i>
@@ -85,7 +85,7 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
     </ul>
 
     <span href="#" class="nav-link h4 w-100 mb-5 text-center">
-        <p>Follow us:</p>
+        <h5>Follow Us:</h5>
       <a href=""><i class="bx bxl-instagram-alt text-white"></i></a>
       <a href=""><i class="bx bxl-twitter px-2 text-white"></i></a>
       <a href=""><i class="bx bxl-facebook text-white"></i></a>
@@ -97,7 +97,7 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
     <!-- Top Nav -->
     <nav class="navbar top-navbar navbar-light bg-light px-5">
       <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
-      <p style="font-family: 'Prata', sans-serif; font-size:35px; color: #5c3d2e">Fur and Tails Animal Care Clinic</p>
+      <p style="font-family: 'Prata', sans-serif; font-size:35px; color: #5c3d2e">Paws and Tails Animal Care Clinic</p>
     
     </nav>
     <!--End Top Nav -->
@@ -106,10 +106,10 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 m-auto">
-                <div class="card bg-dark mt-5">
-                    <div class="card-titl bg-primary text-white mt-5">
-                        <h3 class="text-center py-3">Customer Login Form</h3>
+                <div class="card mt-5">
+            <div class="col-lg-6 m-auto"  style="background-color: #fcdec0;">
+                    <div class="card-title text-white mt-5">
+                      <h2 class="text-center py-3" style="font-family: 'Lato', serif; font-size:35px; color: #5c3d2e;">Customer Login Form</h2>
                     </div>
 
                    
@@ -118,8 +118,8 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
                         <form action="" method="post">
                             <input type="email" name="email" placeholder="Enter Email here" class="form-control mt-3">
                             <input type="password" name="password" placeholder="Enter Password here" class="form-control mt-3">
-                            <button class="btn btn-success mt-3" name="Login">LOG-IN</button>
-                            <p class="text-white mt-3">Create Account! <a href="register.php">REGISTER</a></p>
+                            <button class="btn btn-outline-dark mt-3" name="Login">LOG-IN</button>
+                            <p class="mt-3">Create Account!  <a href="register.php">REGISTER</a></p>
                         </form>
                     </div>
                 </div>
@@ -129,8 +129,8 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
     
     <!-- Footer-->
     <footer class="footer py-3">
-            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
-        </footer>
+      <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Paws and Tails Animal Clinic</p></div>
+    </footer>
 </div><!--EOF MAIN CONTAINER-->
     <!--BOOTSRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
