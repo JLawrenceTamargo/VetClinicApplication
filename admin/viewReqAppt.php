@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if (!isset($_SESSION["SESSION_EMAIL"])) {
+if (!isset($_SESSION["SESSION_EMAIL_ADMIN"])) {
     header("Location: viewReqAppt.php");
 }
 
@@ -10,8 +10,7 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
     
     $reqID = $_GET['reqID'];
     
-
-     
+    
 
 ?>
 
@@ -113,7 +112,7 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
                 </div>
             </div>
 
-<div class="bs-example container" data-example-id="striped-table">
+<div class="col-lg-12 col-sm-6 text-center" data-example-id="striped-table">
   <table class="table table-striped table-bordered table-hover">
    
     <thead>
@@ -128,8 +127,9 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
     </thead>
     <tbody>
     <?php
+          
          
-             $sqlA6= "SELECT * FROM appointment WHERE userID= '{$reqID}' AND status='Pending' ";
+             $sqlA6= "SELECT * FROM appointment WHERE status = 'Approved' OR status='Cancelled' AND userID= '{$reqID}'   ";
              $resultA6= mysqli_query($con, $sqlA6);
          
           while($rows = mysqli_fetch_assoc($resultA6))
@@ -144,10 +144,8 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
         
         <td>
         <form action="update.php" method="POST">
-            <input type="text" name="aptID" value="<?php echo $rows['apptID']; ?>" hidden/>
-            <input type="text" name="userID" value="<?php echo $rows['userID']; ?>" hidden/>
-            <label class="mt-4">Set to:</label>
-                <select name="statusAppt">
+           <label class="mt-2 mb-3">Set to:</label>
+                <select name="statusAppt" style="width:120px;">
                     <option selected="selected" value="">-</option>
                     <option value="Pending" 
                     <?php 
@@ -168,11 +166,16 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
                     >Cancelled</option>
 
                 </select>
+                <label>Add Remarks:</label>
+                <textarea name="remarks" placeholder="Remarks here" style="resize:none; height:50px;"></textarea>
+                <input type="text" name="aptID" value="<?php echo $rows['apptID']; ?>" hidden/>
+            <input type="text" name="userID" value="<?php echo $rows['userID']; ?>" hidden/>
+            
            
            <!-- <input  name="stat" type="text" id="stat" name="statusAppt"/>-->
         </td>
                                 
-        <td><input type="submit"  name="saveStat" value="SAVE"></input></td>
+        <td><input type="submit" style="background-color: #F4EEC0; margin-top:12px;"  name="saveStat" value="SAVE"></input></td>
         </form>
       </tr>
     

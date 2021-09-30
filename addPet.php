@@ -46,12 +46,12 @@ if(isset($_POST["RegisterPet"])){
     <link rel="stylesheet" href="assets/style.css" />
   
     <!--FONTS
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Prata', sans-serif;
+    font-family: 'Lato', sans-serif;
     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
     <title>VetMed Clinic</title>
 
@@ -71,9 +71,9 @@ if(isset($_POST["RegisterPet"])){
 </head>
 <body>
     <!--NAVBAR-->
-    <nav class="navbar fixed-top navbar-expand-lg bg-nav p-md-3">
+    <nav class="navbar fixed-top navbar-expand-lg bg-nav p-md-3" style="background-color:#fcdec0;">
     <div class="container">
-        <a href="#" class="navbar-brand text-white ms-2">Fur and Tails Animal Clinic</a>
+        <p class=" ms-2" style="font-family: 'Permanent Marker', cursive; font-size:25px;">Paws and Tails Animal Clinic</p>
         <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false">
         <span class="navbar-toggler-icon text-white"><i class="bx bx-menu"></i></span>
         </button>
@@ -104,19 +104,19 @@ if(isset($_POST["RegisterPet"])){
     </div>
 </nav>
 
-    <div class="container mt-5" style="padding-top:60px;">
+    <div class="container mt-5 mb-5" style="padding-top:60px; ">
         <div class="row">
         
-            <div class="col-lg-6 m-auto">
-                <div class="card bg-dark mt-5">
-                    <div class="card-title bg-primary text-white mt-5">
-                        <h3 class="text-center py-3">Pet Registration Form</h3>
+            <div class="col-lg-6 mb-4 m-auto">
+                <div class="card mt-5" style="background-color:#fcdec0;">
+                    <div class="card-title mt-5">
+                        <h3 class="text-center py-3" style="background-color:#fcdec0;color:#7E6752;font-size:45px;font-family: 'Permanent Marker', cursive;">Pet Registration Form</h3>
                         
                     </div>
 
                     
 
-                    <div class="card-body">
+                    <div class="card-body" style="background-color:#7E6752;">
                         
                         <form action="" method="post">
 
@@ -174,7 +174,7 @@ if(isset($_POST["RegisterPet"])){
                             <input name="txtContent" type="text" id="txtContent" name="petBreed"/>
                             </div>
 
-                            <button class="btn btn-success mt-3" name="RegisterPet">REGISTER PET</button>
+                            <button class="btn mt-3" style="background-color:#fcdec0;color:#7E6752; font-weight:bold; float:right;" name="RegisterPet">REGISTER PET</button>
                         </form>
                     </div>
                 </div>
@@ -183,8 +183,9 @@ if(isset($_POST["RegisterPet"])){
     </div>
 
        <!-- Footer-->
-       <footer class="footer py-3 bg-dark">
-            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
+       <!-- Footer-->
+    <footer class="footer py-3" style="background-color:#fcdec0;">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-dark">Copyright &copy; 2021 - Paws and Tails Animal Clinic</p></div>
         </footer>
     
 

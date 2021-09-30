@@ -28,7 +28,7 @@
 <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
     <ul class="nav flex-column text-white w-100">
       <a href="#" class="nav-link h3 text-white my-2">
-      <img src="assets/pawLogo-min.png" width="200" height="200"/> </br><p class="text-center mt-3">Fur and Tails Animal Clinic</p>
+      <img src="assets/pawLogo-min.png" width="200" height="200"/> </br><p class="text-center mt-3">Paws and Tails Animal Clinic</p>
       </a>
       <li>
         <a href="index.php" class="nav-link text-white"><i class="bx bxs-dashboard"></i>
@@ -53,7 +53,7 @@
     </ul>
 
     <span href="#" class="nav-link h4 w-100 mb-5 text-center">
-        <p>Follow us:</p>
+        <h5>Follow Us:</h5>
       <a href=""><i class="bx bxl-instagram-alt text-white"></i></a>
       <a href=""><i class="bx bxl-twitter px-2 text-white"></i></a>
       <a href=""><i class="bx bxl-facebook text-white"></i></a>
@@ -65,7 +65,7 @@
     <!-- Top Nav -->
     <nav class="navbar top-navbar navbar-light bg-light px-5">
       <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
-      <p style="font-family: 'Prata', serif; font-size:35px; color: #5c3d2e;">Fur and Tails Animal Care Clinic</p>
+      <p style="font-family: 'Prata', serif; font-size:35px; color: #5c3d2e;">Paws and Tails Animal Care Clinic</p>
     
     </nav>
     <!--End Top Nav -->
@@ -78,14 +78,18 @@
                     <div class="aboutus mb-5">
                         <h1 style="color: #5c3d2e; font-family: 'Lato', sans-serif;"><b>ABOUT</b> US</h1> 
                         <br>
+                        <br>
                         <p class="aboutus-text" style="font-family: 'Prata', serif; font-size:20px;">We love pets!
                           Our focus is to provide quality veterinary care that incorporates all styles and modes of medicines throughout the life of your pet as well as satisfaction to you as their owners. Clients are our boss, quality is our work and value for money is our goal. </p>
-                        <img src="img/about.img.jpg"  width="300px" height="auto" alt="dog and a a healthcare personnel">
+                        <br>
+                        <div class="about1">
+                        <img src="assets/about2.png"  width="590px" height="auto" alt="dog healthcare personnel">
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="aboutus-banner">
-                        <img src="img/au-bg." alt="">
+                        <img src="assets/about1.png" width="260px" height="auto" alt="dog healthcare personnel">
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-6 col-xs-12">
@@ -137,8 +141,8 @@
 
     <!-- Footer-->
     <footer class="footer py-3">
-            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
-        </footer>
+        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Paws and Tails Animal Clinic</p></div>
+    </footer>
 </div>
 
 <!-- bootstrap js -->
