@@ -15,13 +15,11 @@ if (!isset($_SESSION["SESSION_EMAIL_ADMIN"])) {
         $uID = $_POST['userID'];
         $rem= $_POST['remarks'];
 
-
        // echo $aID; die;
        
 
         $sqlStat= "UPDATE appointment SET status ='$statusSet', remarks='$rem' WHERE apptID = '$aID'";
         $resultStat= mysqli_query($con, $sqlStat);
-
 
         
         if($resultStat)
@@ -39,6 +37,7 @@ if (!isset($_SESSION["SESSION_EMAIL_ADMIN"])) {
      
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
