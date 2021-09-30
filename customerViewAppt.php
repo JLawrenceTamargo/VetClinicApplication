@@ -36,9 +36,9 @@ include_once 'conn.php';
 </head>
 <body>
 <!--NAVBAR-->
-<nav class="navbar fixed-top navbar-expand-lg bg-nav p-md-3">
+<nav class="navbar fixed-top navbar-expand-lg bg-nav p-md-3" style="background-color:#fcdec0;">
     <div class="container">
-        <a href="#" class="navbar-brand text-white ms-2">Fur and Tails Animal Clinic</a>
+    <p class=" ms-2" style="font-family: 'Permanent Marker', cursive; font-size:25px;">Paws and Tails Animal Clinic</p>
         <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false">
         <span class="navbar-toggler-icon text-white"><i class="bx bx-menu"></i></span>
         </button>
@@ -70,10 +70,16 @@ include_once 'conn.php';
 </nav>
     
 
-        <div class="container py-5">
-            <div class="table-fluid bg-dark text-light mt-5 p-3">
-                    <h1 class="heading">Appointments</h1>
-                    <table class="table text-white">
+<div class="container mt-5 mb-5" style="padding-top:60px;">
+        <div class="row">
+            <div class="col-lg-6 mb-5 m-auto">
+                
+                        <h3 class="text-center py-3" style="color:#7E6752;font-size:45px;font-family: 'Permanent Marker', cursive;">View Appointment Status</h3>
+
+                    
+            </div>
+</div>
+                    <table class="table text-dark">
                         <thead>
                             <th>Appointment ID</th>
                             <th>Date of Appointment</th>
@@ -109,7 +115,7 @@ include_once 'conn.php';
 
 
             <div class="row mt-5">
-                <h3 class="text-warning text-center">If you want to cancel the appointment, kindly contact us thru 02-8-2881729 or via email: furandtails@gmail.com</h3>
+                <h5 class="text-center" style="color:#7E6752;">If you have any questions or want cancel the appointment, kindly contact us thru 02-8-2881729 or via email: furandtails@gmail.com</h5>
             </div>
         </div>
 
@@ -120,8 +126,8 @@ include_once 'conn.php';
 
 
      <!-- Footer-->
-     <footer class="footer py-3 bg-dark">
-            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
+     <footer class="footer py-3" style="background-color:#fcdec0;">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-dark">Copyright &copy; 2021 - Paws and Tails Animal Clinic</p></div>
         </footer>
                             </div>
          <!--BOOTSRAP JS-->

@@ -32,9 +32,10 @@
 <body>
 
 <!--NAVBAR-->
-<nav class="navbar fixed-top navbar-expand-lg bg-nav p-md-3">
+<nav class="navbar fixed-top navbar-expand-lg bg-nav p-md-3" style="background-color:#fcdec0;">
     <div class="container">
-        <a href="#" class="navbar-brand text-white">Fur and Tails Animal Clinic</a>
+    <p class=" ms-2" style="font-family: 'Permanent Marker', cursive; font-size:25px;">Paws and Tails Animal Clinic</p>
+        
         <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false">
             <span class="navbar-toggler-icon text-white"><i class="bx bx-menu"></i></span>
         </button>
@@ -81,8 +82,9 @@
 </div>
 
     <!-- Footer-->
-    <footer class="footer py-3 bg-dark">
-            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
+    <!-- Footer-->
+    <footer class="footer py-3" style="background-color:#fcdec0;">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-dark">Copyright &copy; 2021 - Paws and Tails Animal Clinic</p></div>
         </footer>
 
 

@@ -107,7 +107,7 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
         <td><?php echo $rows['patientLastname']; ?></td>
         <td><?php echo $rows['status']; ?></td>
         
-        <td><button class="btn btn-lg" style="background-color: #AED09E!important;"><a style="text-decoration:none;" href="viewReqPending.php?reqID=<?php echo $rows['userID']; ?>">VIEW</a></button></td>
+        <td><button class="btn btn-lg" style="background-color: #444444!important; color:#EDEDED!important;"><a style="text-decoration:none; color:#EDEDED!important;" href="viewReqPending.php?reqID=<?php echo $rows['userID']; ?>">VIEW</a></button></td>
       </tr>
 
 
@@ -160,7 +160,7 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
         <td><?php echo $rows['status']; ?>
         <td><?php echo $rows['remarks']; ?>
         
-        <td><button class="btn btn-lg" style="background-color: #AED09E!important;"><a style="text-decoration:none;" name="viewBTN" href="viewReqAppt.php?reqID=<?php echo $rows['userID']; ?>">VIEW</a></button></td>
+        <td><button class="btn btn-lg" style="background-color: #444444!important; color:#EDEDED!important;"><a style="text-decoration:none; color:#EDEDED!important;" name="viewBTN" href="viewReqAppt.php?reqID=<?php echo $rows['userID']; ?>">VIEW</a></button></td>
       </tr>
 
 
