@@ -179,7 +179,7 @@ if (isset($_POST["BookAppt"])) {
 
 
                             <label class="text-white">Select Date:</label>
-                            <input type="text" name="dateAppt" id="dateAppt" class="form-control mb-3">
+                            <input type="date" name="dateAppt" id="dateAppt" class="form-control mb-3">
 
                             <label class="text-white">Select Time:</label>
                             <input type="time" name="timeAppt" class="form-control mb-3">

@@ -41,11 +41,13 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-  
+ 
+
     <title>Admin Dashboard</title>
 </head>
 <body>
 
+ 
 <div id="wrapper">
 
         <!-- Sidebar -->
@@ -205,15 +207,15 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!--EOF JQUERY-->
-<script>
-  $(function()
-  {
-    $("#txtFrom").datepicker({
-      dateFormat:'yy/mm/dd'
-    });
-  });
+<!-- Script -->
 
-</script>
+   <script type='text/javascript'>
+   $(document).ready(function(){
+     $('.dateFilter').datepicker({
+        dateFormat: "yy-mm-dd"
+     });
+   });
+   </script>
 
 
 
