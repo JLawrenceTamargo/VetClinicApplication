@@ -2,7 +2,7 @@
 
 session_start();
 if (!isset($_SESSION["SESSION_EMAIL"])) {
-    header("Location: viewReqAppt.php");
+    header("Location: viewReqPending.php");
 }
 
     include 'con2.php';
@@ -129,7 +129,7 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
     <?php
           
          
-             $sqlA6= "SELECT * FROM appointment WHERE status = 'Approved' OR status='Cancelled' AND userID= '{$reqID}'   ";
+             $sqlA6= "SELECT * FROM appointment WHERE status = 'Pending' AND userID= '{$reqID}'   ";
              $resultA6= mysqli_query($con, $sqlA6);
          
           while($rows = mysqli_fetch_assoc($resultA6))

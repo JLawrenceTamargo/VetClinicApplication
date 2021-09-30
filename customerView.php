@@ -4,29 +4,30 @@ session_start();
 if(!isset($_SESSION["SESSION_EMAIL"])){
     header("Location: customerLogin.php");
 }
+
 include_once 'conn.php';
 
-if(isset($_POST["updateInfo"])){
-     $pUid = $_POST['userID'];
-    $pFname = $_POST['firstnameU'];
-    $pLname = $_POST['lastnameU'];
-    $pEmail = $_POST['emailU'];
 
-    
-    $query5 = "UPDATE users SET (firstname = '{$pFname}', lastname = '{$pLname}', email = '{$pEmail}')";
-    $result3 = mysqli_query($con, $query5);
+if(isset($_POST['updateInfo']))
+    {
+        $user_ID= $_POST['userID'];
+        $pFname= $_POST['firstname'];
+        $pLname = $_POST['lastname'];
+        $pEmail = $_POST['email'];
+        $sqlupInfo= "UPDATE users SET firstname ='$pFname', lastname ='$pLname', email='$pEmail' WHERE userID= '$user_ID'";
+        $resultUpdate= mysqli_query($con, $sqlupInfo);
 
-    if($result3)
-    {
-        
-        echo "<script> alert('Updated Info Successfully'); </script>";
-        
+        if($resultUpdate)
+        {
+            echo "<script> alert('Updated Successfully'); window.location='customerView.php'; </script>";
+            
+        }
+        else
+        {
+            echo "<script> alert('Error'); window.location='customerView.php'; </script>";
+       
+        }
     }
-    else
-    {
-        echo "<script>Error: '.$query5.mysqli_error($con).'</script>";
-    }
-}
 ?>
 
 <!DOCTYPE html>
@@ -54,25 +55,7 @@ if(isset($_POST["updateInfo"])){
 
     <title>Fur and Tails</title>
 
-    <script>
-       
-        
-        function SelectedTextValue2(ele) {
-            if (ele.selectedIndex > 0) {
-                var selectedText = ele.options[ele.selectedIndex].innerHTML;
-                var selectedValue = ele.value;
-                document.getElementById("txtContent2").value = selectedText;
-            }
-            else {
-                document.getElementById("txtContent2").value = "";
-            }
-        }
-
-
-    </script>
-
-
-
+ 
 </head>
 <body>
 <!--NAVBAR-->
@@ -122,7 +105,7 @@ if(isset($_POST["updateInfo"])){
 
                     <div class="card-body">
                         
-                        <form action="" method="post">
+                        <form action="customerView.php" method="post">
 
                         <?php
                             $sql = "SELECT * FROM users WHERE email='{$_SESSION["SESSION_EMAIL"]}'";
@@ -137,16 +120,15 @@ if(isset($_POST["updateInfo"])){
                             <input type="text" name="userID"  class="form-control mb-3" value="<?php echo $row["userID"]; ?>" readonly>
                             
                             <label class="text-white">Firstname:</label>
-                            <input type="text" name="firstname"  class="form-control mb-3" value="<?php echo $row["firstname"]; ?>" readonly>
+                            <input type="text" name="firstname"  class="form-control mb-3" value="<?php echo $row["firstname"]; ?>" >
                             
                             <label class="text-white">Lastname:</label>
-                            <input type="text" name="lastname"  class="form-control mb-3" value="<?php echo $row["lastname"]; ?>" readonly>
+                            <input type="text" name="lastname"  class="form-control mb-3" value="<?php echo $row["lastname"]; ?>" >
                             
                             <label class="text-white">Email:</label>
-                            <input type="email" name="email"  class="form-control mb-3" value="<?php echo $row["email"]; ?>" readonly>
+                            <input type="email" name="email"  class="form-control mb-3" value="<?php echo $row["email"]; ?>">
                             
-                            <button type="button" class="btn btn-primary mb-3 editbtn" data-bs-toggle="modal" data-bs-target="#updateModal">EDIT INFO</button>
-     
+                            <input type="submit" class="form-control mb-3 mt-4" style="background-color: #F4EEC0; margin-top:12px;"  name="updateInfo" value="SAVE"></input>
                           
                             <?php } ?><!--EOF Fetching data-->
 
@@ -159,51 +141,6 @@ if(isset($_POST["updateInfo"])){
     </div>
 
 
-<!-- START OF MODAL-->
-    <!-- Scrollable modal -->
-<div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Update Information</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!--FOR UPDATING-->
-        <form action="" method="post">
-                        <!--Start of Fetching data-->
-                        <?php
-                            $sql = "SELECT * FROM users WHERE email='{$_SESSION["SESSION_EMAIL"]}'";
-                            $result = mysqli_query($con, $sql);
-
-                            if (mysqli_num_rows($result) > 0) 
-                            {
-                                $row = mysqli_fetch_assoc($result);
-                        ?>
-                            <label class="text-dark">User ID:</label>
-                            <input type="text" value="<?php echo $row["userID"]; ?>" name="userID" class="form-control mb-3" readonly/>
-                            
-                            <label class="text-dark">Firstname:</label>
-                            <input type="text" value="<?php echo $row["firstname"]; ?>" name="firstnameU" class="form-control mb-3"/>
-                            
-                            <label class="text-dark">Lastname:</label>
-                            <input type="text" value="<?php echo $row["lastname"]; ?>" name="lastnameU" class="form-control mb-3"/>
-                            
-                            <label class="text-dark">Email:</label>
-                            <input type="email" value="<?php echo $row["email"]; ?>" name="emailU" class="form-control mb-3"/>
-
-                        <?php } ?><!--EOF Fetching data-->
-                              
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-        <button type="button" class="btn btn-primary" name="updateInfo">UPDATE</button>
-      </div>
-      </form>
-    </div>
-  </div>
-</div>
-<!--EOF MODAL-->
 
      <!-- Footer-->
      <footer class="footer py-3 bg-dark">

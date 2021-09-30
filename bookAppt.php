@@ -18,14 +18,13 @@ if(isset($_POST["BookAppt"])){
     $pServices = mysqli_real_escape_string($con, $_POST['services']);
 
     
-    $query4 = "INSERT INTO appointment (userID, patientFirstname, patientLastname, patientPet, dateAppt, timeAppt, serviceAvail, patientEmail, status) 
-    VALUES ('{$uid}', '{$pFname}', '{$pLname}', '{$pPet}', '{$pDate}', '{$pTime}', '{$pServices}', '{$pEmail}', 'Pending')";
+    $query4 = "INSERT INTO appointment (userID, patientFirstname, patientLastname, patientPet, dateAppt, timeAppt, serviceAvail, patientEmail, status, remarks) 
+    VALUES ('{$uid}', '{$pFname}', '{$pLname}', '{$pPet}', '{$pDate}', '{$pTime}', '{$pServices}', '{$pEmail}', 'Pending', '-')";
     $result2 = mysqli_query($con, $query4);
 
     if($result2)
     {
-        header("Location: bookAppt.php");
-        echo "<script> alert('Appointment Booked Successfully'); </script>";
+        echo "<script> alert('Appointment Booked Successfully'); window.location='bookAppt.php'; </script>";
     }
     else
     {

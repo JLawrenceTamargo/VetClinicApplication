@@ -103,10 +103,8 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class='bx bx-menu ibox'></i></a>
-                    <h1>ADD ADMIN</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class='bx bx-menu ibox'></i></a>
+                        <h1>ADD ADMIN</h1>
                     </div>
                 </div>
             </div>
@@ -115,14 +113,11 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
     <!--REGISTRATION FORM-->
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 m-auto">
+            <div class="col-lg-10 col-sm-6 m-auto">
                 <div class="card bg-dark mt-5">
                     <div class="card-titl bg-primary text-white mt-3">
                         <h3 class="text-center py-3">Registration Form</h3>
-                        <p><a href="logoutAdmin.php"  class="text-white">LOG-OUT</a></p>
                     </div>
-
-                    
 
                     <div class="card-body">
                         

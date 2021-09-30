@@ -7,7 +7,7 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
 
         include 'con2.php';
 
-
+        $clientResult = mysqli_query($con, "SELECT * FROM users");
 ?>
 
 
@@ -78,8 +78,23 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
                 </div>
             </div>
 
-            <div class="bs-example container" data-example-id="striped-table">
-  <table class="table table-striped table-bordered table-hover">
+
+            <!--SEARCH BAR-->
+            <div class="col-lg-7 col-sm-6 mt-4 mb-3">
+            <form>
+                
+                <div class="input-group mb-3">
+                  <label class="mt-2 mx-2" style="font-size:20px;">SEARCH:</label>
+                  <input type="text" name="search" id="search" class="form-control" placeholder="Input your search here">
+                  
+                  
+                </div>
+                
+            </form>
+            </div><!--EOF SEARCH BAR-->
+    <!
+    <div class="bs-example container" data-example-id="striped-table">
+  <table class="table table-striped table-bordered table-hover" id="clientTable">
    
     <thead>
       <tr>
@@ -128,7 +143,31 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
   });
     </script>
 
-
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#search').keyup(function(){
+      search_table($(this).val());
+    });
+    function search_table(value){
+      $('#clientTable tr').each(function(){
+        var found='false';
+        $(this).each(function(){
+          if($(this).text().toLowerCase().indexOf(value.toLowerCase())>=0)
+          {
+            found='true';
+          }
+        });
+        if(found=='true')
+        {
+          $(this).show();
+        }
+        else{
+          $(this).hide();
+        }
+      });
+    }
+  });
+</script>
     
 </body>
 </html>

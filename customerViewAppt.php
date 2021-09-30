@@ -81,6 +81,7 @@ include_once 'conn.php';
                             <th>Service Availed</th>
                             <th>Pet Name</th>
                             <th>Status</th>
+                            <th>Remarks</th>
                         </thead>
                         <tbody>
                         <?php
@@ -98,6 +99,7 @@ include_once 'conn.php';
                                 <td><?php echo $rows['serviceAvail']; ?></td>
                                 <td><?php echo $rows['patientPet']; ?></td>
                                 <td><?php echo $rows['status']; ?></td>
+                                <td><?php echo $rows['remarks']; ?></td>
                             <?php 
                                 
                             } ?><!--EOF Fetching data-->
