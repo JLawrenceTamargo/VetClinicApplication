@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if (!isset($_SESSION["SESSION_EMAIL"])) {
+if (!isset($_SESSION["SESSION_EMAIL_ADMIN"])) {
     header("Location: viewReqAppt.php");
 }
 
@@ -13,18 +13,19 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
         $statusSet= $_POST['statusAppt'];
         $aID = $_POST['aptID'];
         $uID = $_POST['userID'];
-
+        $rem= $_POST['remarks'];
 
        // echo $aID; die;
        
 
-        $sqlStat= "UPDATE appointment SET status ='$statusSet' WHERE apptID = '$aID'";
+        $sqlStat= "UPDATE appointment SET status ='$statusSet', remarks='$rem' WHERE apptID = '$aID'";
         $resultStat= mysqli_query($con, $sqlStat);
 
+        
         if($resultStat)
         {
             echo "<script> alert('Updated Successfully'); window.location='viewReqAppt.php?reqID=$uID'; </script>";
-       
+            
         }
         else
         {
@@ -36,6 +37,7 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
      
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

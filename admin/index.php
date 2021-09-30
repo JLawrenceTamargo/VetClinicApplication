@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if (isset($_SESSION["SESSION_EMAIL"])) {
+if (isset($_SESSION["SESSION_EMAIL_ADMIN"])) {
     header("Location: adminDashboard.php");
 }
 
@@ -20,7 +20,7 @@ if(isset($_POST["adminLogin"]))
 
     if($count === 1) {
         $row = mysqli_fetch_assoc($resultA2);
-        $_SESSION["SESSION_EMAIL"] = $emailA;
+        $_SESSION["SESSION_EMAIL_ADMIN"] = $emailA;
         echo "<script> alert('Login Successfully'); window.location='adminDashboard.php'; </script>";
            // header("Location: adminDashboard.php");
     }

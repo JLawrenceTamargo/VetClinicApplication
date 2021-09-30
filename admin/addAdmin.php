@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if (!isset($_SESSION["SESSION_EMAIL"])) {
+if (!isset($_SESSION["SESSION_EMAIL_ADMIN"])) {
     header("Location: index.php");
 }
 
@@ -10,7 +10,7 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
     if(isset($_POST["RegisterAdmin"])){
         include 'con2.php';
 
-        $username= mysqli_real_escape_string($con, $_POST['username']);
+        $fullname= mysqli_real_escape_string($con, $_POST['fullname']);
         $email= mysqli_real_escape_string($con, $_POST['email']);
         $password= mysqli_real_escape_string($con, $_POST['password']);
         $confirmPassword= mysqli_real_escape_string($con, $_POST['confirmPassword']);
@@ -22,12 +22,13 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
         else {
             if($password === $confirmPassword) {
                 $hashedP= md5($password);
-                $queryA1 = "INSERT INTO adminUsers (username, password, email) VALUES ('{$username}', '{$hashedP}', '{$email}')";
+                $queryA1 = "INSERT INTO adminUsers (fullname, password, email) VALUES ('{$fullname}', '{$hashedP}', '{$email}')";
                 $resultA1 = mysqli_query($con, $queryA1);
 
                 if($resultA1)
                 {
-                    header("Location: adminDashboard.php");
+                    echo "<script> alert('Added Admin Successfully'); window.location='adminDashboard.php'; </script>";
+                    //header("Location: adminDashboard.php");
                 }
                 else{
                     echo '<script>Error: ".$queryA1.mysqli_error($con)."</script>';
@@ -103,10 +104,8 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class='bx bx-menu ibox'></i></a>
-                    <h1>ADD ADMIN</h1>
-                        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class='bx bx-menu ibox'></i></a>
+                        <h1>ADD ADMIN</h1>
                     </div>
                 </div>
             </div>
@@ -115,25 +114,22 @@ if (!isset($_SESSION["SESSION_EMAIL"])) {
     <!--REGISTRATION FORM-->
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 m-auto">
-                <div class="card bg-dark mt-5">
-                    <div class="card-titl bg-primary text-white mt-3">
-                        <h3 class="text-center py-3">Registration Form</h3>
-                        <p><a href="logoutAdmin.php"  class="text-white">LOG-OUT</a></p>
+            <div class="col-lg-8 col-sm-6 m-auto">
+                <div class="card mt-5" style="background-color:#444444;">
+                    <div class="card-title  mt-3">
+                        <h3 class="text-center py-3" style="background-color:#444444;color:#EDEDED;font-size:45px;font-family: 'Permanent Marker', cursive;">Admin Registration Form</h3>
                     </div>
-
-                    
 
                     <div class="card-body">
                         
                         <form action="" method="post">
 
-                            <input type="text" name="username" placeholder="Enter Username here" class="form-control mt-3">
+                            <input type="text" name="fullname" placeholder="Enter Fullname here" class="form-control mt-3">
                             <input type="email" name="email" placeholder="Enter Email here" class="form-control mt-3">
                             <input type="password" name="password" placeholder="Enter Password here" class="form-control mt-3">
                             <input type="password" name="confirmPassword" placeholder="Confirm Password here" class="form-control mt-3">
                            
-                            <button class="btn btn-success mt-3" name="RegisterAdmin">REGISTER</button>
+                            <button class="btn btn-lg btn-dark mt-3"  style="float:right" name="RegisterAdmin">REGISTER</button>
                         </form>
                     </div>
                 </div>

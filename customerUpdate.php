@@ -40,38 +40,25 @@ if (isset($_POST["updateInfo"])) {
     <link rel="stylesheet" href="assets/style.css" />
 
     <!--FONTS
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Prata', sans-serif;
+    font-family: 'Lato', sans-serif;
     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
 
 
-    <title>Fur and Tails</title>
-
-    <script>
-        function SelectedTextValue2(ele) {
-            if (ele.selectedIndex > 0) {
-                var selectedText = ele.options[ele.selectedIndex].innerHTML;
-                var selectedValue = ele.value;
-                document.getElementById("txtContent2").value = selectedText;
-            } else {
-                document.getElementById("txtContent2").value = "";
-            }
-        }
-    </script>
-
+    <title>Paws and Tails</title>
 
 
 </head>
 
 <body>
     <!--NAVBAR-->
-    <nav class="navbar fixed-top navbar-expand-lg bg-nav p-md-3">
+    <nav class="navbar fixed-top navbar-expand-lg bg-nav p-md-3" style="background-color:#fcdec0;">
         <div class="container">
-            <a href="#" class="navbar-brand text-white ms-2">Fur and Tails Animal Clinic</a>
+            <p class=" ms-2" style="font-family: 'Permanent Marker', cursive; font-size:25px;">Paws and Tails Animal Clinic</p>
             <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false">
                 <span class="navbar-toggler-icon text-white"><i class="bx bx-menu"></i></span>
             </button>
@@ -107,10 +94,11 @@ if (isset($_POST["updateInfo"])) {
 
 
 
+
     <!-- Footer-->
-    <footer class="footer py-3 bg-dark">
+    <footer class="footer py-3" style="background-color:#fcdec0;">
         <div class="container px-4 px-lg-5">
-            <p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p>
+            <p class="m-0 text-center text-dark">Copyright &copy; 2021 - Paws and Tails Animal Clinic</p>
         </div>
     </footer>
 
