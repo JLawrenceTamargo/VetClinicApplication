@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="assets/style.css" />
   
     <!--FONTS
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Prata', sans-serif;
+    font-family: 'Lato', sans-serif;
     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
 
 
@@ -65,7 +65,7 @@
     <!-- Top Nav -->
     <nav class="navbar top-navbar navbar-light bg-light px-5">
       <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
-      <p style="font-family: 'Overpass', sans-serif; font-size:35px;">Fur and Tails Animal Care Clinic</p>
+      <p style="font-family: 'Prata', serif; font-size:35px; color: #5c3d2e;">Fur and Tails Animal Care Clinic</p>
     
     </nav>
     <!--End Top Nav -->
@@ -74,17 +74,18 @@
     <div class="aboutus-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="col-md-3 col-sm-2 col-xs-12">
                     <div class="aboutus mb-5">
-                        <h2 class="aboutus-title" style="font-family: 'Permanent Marker', cursive; font-size:45px;">About Us</h2>
-                        <p class="aboutus-text" style="font-family: 'Overpass', sans-serif; font-size:18px">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
-                        <p class="aboutus-text" style="font-family: 'Overpass', sans-serif; font-size:18px">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
-                        
+                        <h1 style="color: #5c3d2e; font-family: 'Lato', sans-serif;"><b>ABOUT</b> US</h1> 
+                        <br>
+                        <p class="aboutus-text" style="font-family: 'Prata', serif; font-size:20px;">We love pets!
+                          Our focus is to provide quality veterinary care that incorporates all styles and modes of medicines throughout the life of your pet as well as satisfaction to you as their owners. Clients are our boss, quality is our work and value for money is our goal. </p>
+                        <img src="img/about.img.jpg"  width="300px" height="auto" alt="dog and a a healthcare personnel">
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="aboutus-banner">
-                        <img src="http://themeinnovation.com/demo2/html/build-up/img/home1/about1.jpg" alt="">
+                        <img src="img/au-bg." alt="">
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-6 col-xs-12">
@@ -94,9 +95,11 @@
                                 <div class="iconset">
                                     <span class="glyphicon glyphicon-cog icon"></span>
                                 </div>
+                                <br>
+                                <br>
                                 <div class="feature-content mb-4">
-                                    <p style="font-family: 'Permanent Marker', cursive; font-size:35px;">Work with heart</p>
-                                    <p style="font-family: 'Overpass', sans-serif; font-size:18px">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                                    <h2 style="color: #5c3d2e; font-family: 'Prata', sans-serif;">Work with Heart</h2>
+                                    <p class="aboutus-text" style="font-family: 'Lato', serif; font-size:22px">We combine our expertise with a love for animals and the belief that kindness is the foundation of veterinary medicine.</p>
                                 </div>
                             </div>
                         </div>
@@ -106,8 +109,8 @@
                                     <span class="glyphicon glyphicon-cog icon"></span>
                                 </div>
                                 <div class="feature-content mb-4">
-                                    <p style="font-family: 'Permanent Marker', cursive; font-size:35px;">Reliable services</p>
-                                    <p style="font-family: 'Overpass', sans-serif; font-size:18px">Donec vitae sapien ut libero venenatis faucibu. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt</p>
+                                    <h2 style="color: #5c3d2e; font-family: 'Prata', sans-serif;">Reliable Services</h2>
+                                    <p class="aboutus-text" style="font-family: 'Lato', serif;font-size:22px">We use resources to the full, waste nothing and do only what we can do best.</p>
                                 </div>
                             </div>
                         </div>
@@ -117,8 +120,8 @@
                                     <span class="glyphicon glyphicon-cog icon"></span>
                                 </div>
                                 <div class="feature-content mb-4">
-                                    <p style="font-family: 'Permanent Marker', cursive; font-size:35px;">Great support</p>
-                                    <p style="font-family: 'Overpass', sans-serif; font-size:18px">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                                    <h2 style="color: #5c3d2e; font-family: 'Prata', sans-serif;">Great Support</h2>
+                                    <p class="aboutus-text" style="font-family: 'Lato', serif; font-size:22px">A mutual benefit is a shared benefit; a shared benefit will endure.</p>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +136,7 @@
     <!--EOF ABOUT PAGE-->
 
     <!-- Footer-->
-    <footer class="footer py-3 bg-dark">
+    <footer class="footer py-3">
             <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
         </footer>
 </div>

@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="assets/style.css" />
   
     <!--FONTS
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Prata', sans-serif;
+    font-family: 'Lato', sans-serif;
     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
 
 
@@ -60,7 +60,7 @@
     <!-- Top Nav -->
     <nav class="navbar top-navbar navbar-light bg-light px-5">
       <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
-      <p style="font-family: 'Overpass', sans-serif; font-size:35px;">Fur and Tails Animal Care Clinic</p>
+      <p style="font-family: 'Prata', serif; font-size:35px; color: #5c3d2e;">Fur and Tails Animal Care Clinic</p>
     
     </nav>
     <!--End Top Nav -->
@@ -72,19 +72,19 @@
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://tvmdl.tamu.edu/wp-content/uploads/2015/03/LineofDogs.jpg" alt="..." /></div>
                 <div class="col-lg-5">
-                    <h1 class="font-weight-light" style="font-family: 'Permanent Marker', cursive; font-size:45px;">Care for our FOUR legged Friends</h1>
-                    <p style="font-family: 'Overpass', sans-serif; font-size:18px">At Fur and Tails, your pet's health is our top priority and we provide an excellent service just to save your pets. 
+                    <h1 class="font-weight-light" style="font-family: 'Prata', sans-serif; color: #5c3d2e; font-size:45px;">Care For Our Four Legged Friends</h1>
+                    <p style="font-family: 'Lato', serif; font-size:22px">At Fur and Tails, your pet's health is our top priority and we provide an excellent service just to save your pets. 
                         We strive to provide the very best in medical care, and provide a quality grooming service. 
                         And we offer nothing less than that to you.</p>
                 </div>
             </div>
             <!-- Call to Action-->
-            <div class="card text-white bg-secondary my-5 py-4 text-center">
+            <div class="card text-white my-5 py-4 text-center">
                 <div class="card-body">
                     <img src="https://static.thenounproject.com/png/981751-200.png" width="50" height="50" alt="paw1"/>
                     <img src="https://static.thenounproject.com/png/981751-200.png" width="50" height="50" alt="paw1"/>
                     <img src="https://static.thenounproject.com/png/981751-200.png" width="50" height="50" alt="paw1"/>
-                    <p class="text-white m-0" style="font-family: 'Overpass', sans-serif;font-size:35px;">PAWSitively Passionate about Pets!</p>
+                    <p class="m-0 py-3" style="font-family:'Prata', serif; font-size:35px; color: #5c3d2e;">PAWSitively Passionate About Pets!</p>
                     <img src="https://static.thenounproject.com/png/981751-200.png" width="50" height="50" alt="paw1"/>
                     <img src="https://static.thenounproject.com/png/981751-200.png" width="50" height="50" alt="paw1"/>
                     <img src="https://static.thenounproject.com/png/981751-200.png" width="50" height="50" alt="paw1"/>
@@ -96,34 +96,34 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title" style="font-family: 'Permanent Marker', cursive; font-size:32px;">Compassion in the Face of disaster</h2>
-                            <p class="card-text" style="font-family: 'Overpass', sans-serif; font-size:18px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            <h2 class="card-title" style="font-family: 'Prata', sans-serif;  color: #5c3d2e; font-size:32px;">Compassion in the Face of disaster</h2>
+                            <p class="card-text" style="font-family: 'Lato', serif;  font-size:19px; padding-top: 10px">Compassion is never more important or more difficult than in times of needs. Commpassion is more than a desire to HELP. The best way we ever can.</p>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Read More</a></div>
+                        <div class="card-footer"><a class="btn btn-outline-dark btn-sm" href="#!">Read More</a></div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title" style="font-family: 'Permanent Marker', cursive; font-size:32px;">Ready to Adapt a New Family Member?</h2>
-                            <p class="card-text" style="font-family: 'Overpass', sans-serif; font-size:18px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                            <h2 class="card-title" style="font-family: 'Prata', sans-serif; color: #5c3d2e; font-size:32px;">Ready to Adapt a New Family Member?</h2>
+                            <p class="card-text" style="font-family:  'Lato', serif;  font-size:19px; padding-top: 10px">Being ready for adotion is about more than wanting to share your home. It also means having a physical space for the adopted, ready to provide all the need, home & medical care, but most of all the time and emotional energy.</p>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Read More</a></div>
+                        <div class="card-footer"><a class="btn btn-outline-dark btn-sm" href="#!">Read More</a></div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title" style="font-family: 'Permanent Marker', cursive; font-size:32px;">Fur and Tails Overall Champion Veterinary Clinic</h2>
-                            <p class="card-text" style="font-family: 'Overpass', sans-serif; font-size:18px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            <h2 class="card-title" style="font-family: 'Prata', sans-serif; color: #5c3d2e; font-size:32px;">Fur and Tails Veterinary Clinic</h2>
+                            <p class="card-text" style="font-family: 'Lato', serif; font-size:19px; padding-top: 10px">Our veterinary team cares about what they do and is always ready to help. We are a full service clinic that provides care to your fur babies. We love the animals we serve and we provide quality services like what champions do.</p>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Read More</a></div>
+                        <div class="card-footer"><a class="btn btn-outline-dark btn-sm" href="#!">Read More</a></div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Footer-->
-        <footer class="footer py-3 bg-dark">
+        <footer class="footer py-3">
             <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
               <span>
           <p>Follow us:</p>
