@@ -44,12 +44,12 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
   <link rel="stylesheet" href="assets/style.css" />
   
     <!--FONTS
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Prata', sans-serif;
+    font-family: 'Lato', sans-serif;
     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
 
 
@@ -97,7 +97,7 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
     <!-- Top Nav -->
     <nav class="navbar top-navbar navbar-light bg-light px-5">
       <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
-      <p style="font-family: 'Overpass', sans-serif; font-size:35px;">Fur and Tails Animal Care Clinic</p>
+      <p style="font-family: 'Prata', sans-serif; font-size:35px; color: #5c3d2e">Fur and Tails Animal Care Clinic</p>
     
     </nav>
     <!--End Top Nav -->
@@ -128,7 +128,7 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
     </div>
     
     <!-- Footer-->
-    <footer class="footer py-3 bg-dark">
+    <footer class="footer py-3">
             <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
         </footer>
 </div><!--EOF MAIN CONTAINER-->

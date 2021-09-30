@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="assets/style.css" />
   
     <!--FONTS
-    font-family: 'Overpass', sans-serif;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Prata', sans-serif;
+    font-family: 'Lato', sans-serif;
     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 
 
 
@@ -65,7 +65,7 @@
     <!-- Top Nav -->
     <nav class="navbar top-navbar navbar-light bg-light px-5">
       <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
-      <p style="font-family: 'Overpass', sans-serif; font-size:35px;">Fur and Tails Animal Care Clinic</p>
+      <p style="font-family: 'Prata', sans-serif; font-size:35px; color: #5c3d2e;">Fur and Tails Animal Care Clinic</p>
     
     </nav>
     <!--End Top Nav -->
@@ -73,7 +73,18 @@
         
 <!--SERVICE-->
 <div class="container">
-<h2>Services Offered</h2> 
+    <div class="row">
+        <div class="col-md-10">
+            <div class="d-flex align-items-center justify-content-between" style="padding-top: 20px; padding-bottom: 20px">
+                <h1 style="color: #5c3d2e; font-family: 'Lato', sans-serif;"><b>OUR</b> SERVICES</h1>
+                <div class="container-contact-form-btn">
+                <button type="submit" class="contact-form-btn">
+                <span>BOOK APPOINTMENT</span>
+                </button>
+            </div>
+          </div>
+        </div>
+    </div>
     <div class="row">
     
         <!--SERVICE 1-->
@@ -85,14 +96,64 @@
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Grooming</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <h2 class="card-title" style="font-family: 'Prata', sans-serif; color: #5c3d2e">GROOMING</h2>
+                        <p class="card-text" style="font-family: 'Lato',sans-serif; font-size: 20px">
+                        Proper Hygienic Care and Cleaning.
+                    </p>
+                    <button
+                    type="button"
+                    class="btn btn-outline-dark"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Modal_1"
+                    >
+                    Learn More
+                </button>
+                <!-- Modal -->
+              <div
+                class="modal fade"
+                id="Modal_1"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title"
+                        id="exampleModalLabel"
+                        style="font-family: 'Lato',sans-serif; color: #5c3d2e"
+                      >
+                        GROOMING
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
+                    <div class="modal-body">
+                      We offer a premium grooming experience with a focus on
+                      personal care and customer service.
                     </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
 
         <!--SERVICE 2-->
         <div class="col-md-5">
@@ -103,14 +164,65 @@
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Consultation</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h2 class="card-title" style="font-family: 'Prata',sans-serif; color: #5c3d2e">CONSULTATION</h2>
+                    <p class="card-text" style="font-family: 'Lato',sans-serif; font-size: 20px">
+                    Animal Treatment and Prevention Advice.
+                    </p>
+                <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#Modal_2"
+                >
+                Learn More
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="Modal_2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title"
+                        id="exampleModalLabel"
+                        style="font-family: 'Lato',sans-serif; color: #5c3d2e"
+                      >
+                        CONSULTATION
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
+                    <div class="modal-body">
+                      We offer a free 15-minute consultation with a licensed
+                      veterinarian. We also offer memberships at a reduced price
+                      for those who need more support.
                     </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
+          </div>
+         </div>
+       </div>
+     </div>
     </div><!--EOF 1st ROW-->
 
     <div class="row">
@@ -123,14 +235,64 @@
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Vaccinations</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h2 class="card-title" style="font-family: 'Prata',sans-serif; color: #5c3d2e">VACCINATIONS</h2>
+                    <p class="card-text" style="font-family: 'Lato',sans-serif; font-size: 20px">
+                    Protect Your Animals from Diseases and Viruses.
+                    </p>
+                <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#Modal_3"
+                >
+                Learn More
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="Modal_3"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title"
+                        id="exampleModalLabel"
+                        style="font-family: 'Lato',sans-serif; color: #5c3d2e"
+                      >
+                        VACCINATIONS
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
+                    <div class="modal-body">
+                     The importance of getting your pets the proper
+                      immunizations to protect them from long-term health risks.
                     </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+       </div>
+     </div>
 
         <!--SERVICE 4-->
         <div class="col-md-5">
@@ -141,14 +303,63 @@
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Laboratories</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h2 class="card-title" style="font-family: 'Prata',sans-serif; color: #5c3d2e">LABORATORIES</h2>
+                    <p class="card-text" style="font-family: 'Lato',sans-serif; font-size: 20px">
+                    Laboratory Test For Veterinary Care.
+                    </p>
+                <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#Modal_4"
+              >
+                Learn More
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="Modal_4"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title"
+                        id="exampleModalLabel"
+                        style="font-family: 'Lato',sans-serif; color: #5c3d2e"
+                      >
+                        LABORATORIES
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
+                    <div class="modal-body">
+                      Blood test or lab test to check about your pet's health.
                     </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+         </div>
         </div>
+      </div>
     </div><!--EOF 2nd ROW-->
 
 
@@ -162,14 +373,64 @@
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Confinement</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h2 class="card-title" style="font-family: 'Prata',sans-serif; color: #5c3d2e">CONFINEMENT</h2>
+                    <p class="card-text" style="font-family: 'Lato',sans-serif; font-size: 20px">
+                    Delivering Excellent Care to Confined Pets.
+                    </p>
+                <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#Modal_5"
+                >
+                Learn More
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="Modal_5"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title"
+                        id="exampleModalLabel"
+                        style="font-family: 'Lato',sans-serif; color: #5c3d2e"
+                      >
+                        CONFINEMENT
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
+                    <div class="modal-body">
+                    Monitoring on your pet’s condition regularly. Sanitize
+                    facilities and disinfect reusable medical equipment.
                     </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
 
         <!--SERVICE 6-->
         <div class="col-md-5">
@@ -180,18 +441,70 @@
                     </div>
                     <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Home Service</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h2 class="card-title" style="font-family: 'Prata',sans-serif; color: #5c3d2e">HOME SERVICE</h2>
+                    <p class="card-text" style="font-family: 'Lato',sans-serif; font-size: 20px">
+                    Available within Metro Manila <br> from 9AM - 6PM.
+                </p>
+                <button
+                type="button"
+                class="btn btn-outline-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#Modal_6"
+                >
+                Learn More
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="Modal_6"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title"
+                        id="exampleModalLabel"
+                        style="font-family: 'Lato',sans-serif; color: #5c3d2e"
+                      >
+                       HOME SERVICE
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
+                    <div class="modal-body">
+                    Veterinarian on call for more personal and convenient
+                    service. Vet's expertise without the hassle and stress of
+                    heading into the animal hospital. Call or message us for
+                    more further inquiries and details.
                     </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div><!--EOF 3rd ROW-->
+      </div>
+    </div>
+  </div><!--EOF 3rd ROW-->
 </div><!--EOF Container-->
 <!-- Footer-->
-<footer class="footer py-3 bg-dark">
+<footer class="footer py-3">
             <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2021 - Fur and Tails Animal Clinic</p></div>
         </footer>
     
