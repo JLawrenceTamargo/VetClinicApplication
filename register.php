@@ -109,7 +109,7 @@
     <!-- Top Nav -->
     <nav class="navbar top-navbar navbar-light bg-light px-5">
       <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
-      <p style="font-family: 'Overpass', sans-serif; font-size:35px;">Fur and Tails Animal Care Clinic</p>
+      <p style="font-family: 'Prata', sans-serif; font-size:35px; color: #5c3d2e">Paws and Tails Animal Care Clinic</p>
     
     </nav>
     <!--End Top Nav -->
@@ -117,10 +117,11 @@
     <!--REGISTRATION FORM-->
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 m-auto">
-                <div class="card bg-dark mt-5">
-                    <div class="card-titl bg-primary text-white mt-5">
-                        <h3 class="text-center py-3">Customer Registration Form</h3>
+        <div class="card mt-5">
+            <div class="col-lg-6 m-auto" style="background-color: #fcdec0;">
+                
+                    <div class="card-title mt-5">
+                      <h2 class="text-center py-3" style="font-family: 'Lato', serif; font-size:35px; color: #5c3d2e;">Customer Registration Form</h2>
                     </div>
 
                     
@@ -135,9 +136,10 @@
                             <input type="password" name="password" placeholder="Enter Password here" class="form-control mt-3">
                             <input type="password" name="confirmPassword" placeholder="Confirm Password here" class="form-control mt-3">
                            
-                            <button class="btn btn-success mt-3" name="Register">REGISTER</button>
-                            <p class="text-white mt-3">Already have an existing account? <a href="customerLogin.php">SIGN-IN</a></p>
+                            <button class="btn btn-outline-dark mt-3" style="float:right;" name="Register">REGISTER</button>
+                            
                         </form>
+                        <p class="mt-3" style="color:#5C3D2E;">Already have an existing account? <a href="customerLogin.php" style="text-decoration:none; color:#5C3D2E;">SIGN-IN</a></p>
                     </div>
                 </div>
             </div>
