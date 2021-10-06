@@ -118,9 +118,10 @@ if (isset($_SESSION["SESSION_EMAIL"])) {
                         <form action="" method="post">
                             <input type="email" name="email" placeholder="Enter Email here" class="form-control mt-3">
                             <input type="password" name="password" placeholder="Enter Password here" class="form-control mt-3">
-                            <button class="btn btn-outline-dark mt-3" name="Login">LOG-IN</button>
-                            <p class="mt-3">Create Account!  <a href="register.php">REGISTER</a></p>
+                            <button class="btn btn-outline-dark mt-3" style="float:right;" name="Login">LOG-IN</button>
                         </form>
+                        <p class="mt-3" style="color:#5C3D2E;">Create account here! <a href="register.php" style="text-decoration:none; color:#5C3D2E;">REGISTER</a></p>
+                    
                     </div>
                 </div>
             </div>
